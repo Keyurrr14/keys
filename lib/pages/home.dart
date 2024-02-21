@@ -40,41 +40,49 @@ class _HomePageState extends State<HomePage> {
                 ),
               ],
             ),
+
+
+
             const SizedBox(height: 40),
+
+
+
             Row(
               children: [
-                Container(
-                  padding: const EdgeInsets.all(20),
-                  width: 350,
-                  decoration: BoxDecoration(
-                    color: Colors.transparent,
-                    borderRadius: BorderRadius.circular(16),
-                    border: Border.all(
-                      color: Colors.grey,
+                Expanded(
+                  child: Container(
+                    padding: const EdgeInsets.all(20),
+                    //width: 350,
+                    decoration: BoxDecoration(
+                      color: Colors.transparent,
+                      borderRadius: BorderRadius.circular(16),
+                      border: Border.all(
+                        color: Colors.grey,
+                      ),
                     ),
-                  ),
-                  child: const Row(
-                    children: [
-                      Icon(Icons.wallet, size: 50),
-                      SizedBox(width: 25),
-                      Column(
-                        crossAxisAlignment: CrossAxisAlignment.start,
-                        children: [
-                          Text(
-                            "Rs. 600",
-                            style: TextStyle(
-                              fontSize: 25,
+                    child: const Row(
+                      children: [
+                        Icon(Icons.wallet, size: 50),
+                        SizedBox(width: 25),
+                        Column(
+                          crossAxisAlignment: CrossAxisAlignment.start,
+                          children: [
+                            Text(
+                              "Rs. 600",
+                              style: TextStyle(
+                                fontSize: 25,
+                              ),
                             ),
-                          ),
-                          Text(
-                            'My Wallet Balance',
-                            style: TextStyle(
-                              fontSize: 13,
-                            ),
-                          )
-                        ],
-                      )
-                    ],
+                            Text(
+                              'My Wallet Balance',
+                              style: TextStyle(
+                                fontSize: 13,
+                              ),
+                            )
+                          ],
+                        )
+                      ],
+                    ),
                   ),
                 )
               ],
@@ -87,6 +95,7 @@ class _HomePageState extends State<HomePage> {
                   style: TextStyle(
                     fontFamily: 'Euclid Circular B',
                     fontSize: 20,
+                    fontWeight: FontWeight.bold,
                     color: Colors.black,
                   ),
                 ),
