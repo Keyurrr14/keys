@@ -2,10 +2,7 @@ import 'package:flutter/material.dart';
 import 'package:keys/pages/home.dart';
 
 class LoginPage extends StatelessWidget {
-  const LoginPage({super.key});
-
-  final emailController = TextEditingController();
-  final passwordController = TextEditingController();
+  const LoginPage({super.key})
 
 
   @override
