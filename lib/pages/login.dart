@@ -2,7 +2,8 @@ import 'package:flutter/material.dart';
 import 'package:keys/pages/home.dart';
 
 class LoginPage extends StatelessWidget {
-  const LoginPage({super.key})
+  const LoginPage({super.key});
+
 
 
   @override
