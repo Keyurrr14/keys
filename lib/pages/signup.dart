@@ -106,12 +106,6 @@ class _SignupPageState extends State<SignupPage> {
                   ElevatedButton(
                     onPressed: () {
                       signUp();
-                      Navigator.push(
-                        context,
-                        MaterialPageRoute(builder: (context) => const HomePage()), // Replace Home() with your home screen widget
-                      );
-
-
                     },
                     style: ButtonStyle(
                       backgroundColor: MaterialStateProperty.all<Color>(const Color(0xffF86B70)),
@@ -138,6 +132,10 @@ class _SignupPageState extends State<SignupPage> {
       await FirebaseAuth.instance.createUserWithEmailAndPassword(
         email: emailController.text.trim(),
         password: passwordController.text.trim(),
+      );
+      Navigator.pushReplacement(
+        context,
+        MaterialPageRoute(builder: (context) => const HomePage()),
       );
     } on FirebaseAuthException catch(e){
       print(e);
