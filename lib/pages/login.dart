@@ -4,6 +4,10 @@ import 'package:keys/pages/home.dart';
 class LoginPage extends StatelessWidget {
   const LoginPage({super.key});
 
+  final emailController = TextEditingController();
+  final passwordController = TextEditingController();
+
+
   @override
   Widget build(BuildContext context) {
     return Scaffold(

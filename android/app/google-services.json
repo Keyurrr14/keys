@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "764604899770",
+    "project_id": "keysapp-97218",
+    "storage_bucket": "keysapp-97218.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:764604899770:android:4410713c28b8c9bfd37d83",
+        "android_client_info": {
+          "package_name": "com.example.keys"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBOBezeFgllgeRDOL-SEPCyuj62fwvBdVQ"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

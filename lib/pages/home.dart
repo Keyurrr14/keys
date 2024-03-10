@@ -71,6 +71,7 @@ class _HomePageState extends State<HomePage> {
                               "Rs. 600",
                               style: TextStyle(
                                 fontSize: 25,
+                                fontWeight: FontWeight.w500,
                               ),
                             ),
                             Text(
