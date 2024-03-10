@@ -33,14 +33,14 @@ class WelcomePage extends StatelessWidget {
               width: 275,
               child: ElevatedButton(
                 onPressed: () {
-                  Navigator.push(
+                  Navigator.pushReplacement(
                     context,
                     MaterialPageRoute(builder: (context) => const SignupPage()),
                   );
                 },
                 child: const Text('Sign Up',
                   style: TextStyle(
-                    fontSize: 20
+                      fontSize: 20
                   ),
                 ),
               ),
@@ -51,7 +51,7 @@ class WelcomePage extends StatelessWidget {
               width: 275,
               child: ElevatedButton(
                 onPressed: () {
-                  Navigator.push(
+                  Navigator.pushReplacement(
                     context,
                     MaterialPageRoute(builder: (context) => const LoginPage()),
                   );
@@ -69,4 +69,3 @@ class WelcomePage extends StatelessWidget {
     );
   }
 }
-

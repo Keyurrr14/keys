@@ -1,3 +1,4 @@
+import 'package:firebase_auth/firebase_auth.dart';
 import 'package:flutter/material.dart';
 import 'package:keys/pages/welcome.dart';
 import 'package:keys/pages/signup.dart';
@@ -25,8 +26,20 @@ class MyApp extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
-        debugShowCheckedModeBanner: false,
-        theme: ThemeData(fontFamily: 'Euclid Circular B'),
-        home: const WelcomePage());
+      debugShowCheckedModeBanner: false,
+      theme: ThemeData(fontFamily: 'Euclid Circular B'),
+      home: StreamBuilder<User?>(
+        stream: FirebaseAuth.instance.authStateChanges(),
+        builder: (context, snapshot) {
+          if (snapshot.hasData) {
+            print('Has data');
+            return HomePage();
+          } else {
+            print('Does not have data');
+            return WelcomePage();
+          }
+        },
+      ),
+    );
   }
 }
